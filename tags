@@ -1,0 +1,178 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BatchBill	cash_desk/cash_desk.py	/^class BatchBill():$/;"	c
+Bill	cash_desk/cash_desk.py	/^class Bill():$/;"	c
+CashDesk	cash_desk/cash_desk.py	/^class CashDesk():$/;"	c
+Fraction	fractions/fraction_class.py	/^class Fraction:$/;"	c
+Polynomial	polynomial/polynomial.py	/^class Polynomial():$/;"	c
+Term	polynomial/polynomial.py	/^class Term():$/;"	c
+Test	polynomial/test_utils_for_polynomial.py	/^class Test(unittest.TestCase):$/;"	c
+TestBatchBill	cash_desk/test_cash_desk.py	/^class TestBatchBill(unittest.TestCase):$/;"	c
+TestBill	cash_desk/test_cash_desk.py	/^class TestBill(unittest.TestCase):$/;"	c
+TestCashDesk	cash_desk/test_cash_desk.py	/^class TestCashDesk(unittest.TestCase):$/;"	c
+TestDenormalizeSortedFractions	fractions/test_sort_fractions.py	/^class TestDenormalizeSortedFractions(unittest.TestCase):$/;"	c
+TestDictSorter	my_sort/test_my_sort.py	/^class TestDictSorter(unittest.TestCase):$/;"	c
+TestFractionClass	fractions/test_fraction_class.py	/^class TestFractionClass(unittest.TestCase):$/;"	c
+TestGetKey	fractions/test_sort_fractions.py	/^class TestGetKey(unittest.TestCase):$/;"	c
+TestInput	my_sort/test_my_sort.py	/^class TestInput(unittest.TestCase):$/;"	c
+TestListSorter	my_sort/test_my_sort.py	/^class TestListSorter(unittest.TestCase):$/;"	c
+TestNormalizeFractions	fractions/test_collect_fractions.py	/^class TestNormalizeFractions(unittest.TestCase):$/;"	c
+TestNormalizeFractions	fractions/test_sort_fractions.py	/^class TestNormalizeFractions(unittest.TestCase):$/;"	c
+TestPolymonialClass	polynomial/test_polynomial.py	/^class TestPolymonialClass(unittest.TestCase):$/;"	c
+TestSimplifyFraction	fractions/test_simplify_fraction.py	/^class TestSimplifyFraction(unittest.TestCase):$/;"	c
+TestSortNormalizedFractions	fractions/test_sort_fractions.py	/^class TestSortNormalizedFractions(unittest.TestCase):$/;"	c
+TestSumNormalizedFractions	fractions/test_collect_fractions.py	/^class TestSumNormalizedFractions(unittest.TestCase):$/;"	c
+TestTermsClass	polynomial/test_polynomial.py	/^class TestTermsClass(unittest.TestCase):$/;"	c
+TestTupleSorter	my_sort/test_my_sort.py	/^class TestTupleSorter(unittest.TestCase):$/;"	c
+__add__	fractions/fraction_class.py	/^	def __add__(self, other):$/;"	m	class:Fraction	file:
+__eq__	cash_desk/cash_desk.py	/^	def __eq__(self, other):$/;"	m	class:Bill	file:
+__eq__	fractions/fraction_class.py	/^	def __eq__(self, other):$/;"	m	class:Fraction	file:
+__getitem__	cash_desk/cash_desk.py	/^	def __getitem__(self, index):$/;"	m	class:BatchBill	file:
+__getitem__	polynomial/polynomial.py	/^    def __getitem__(self, index):$/;"	m	class:Polynomial	file:
+__hash__	cash_desk/cash_desk.py	/^	def __hash__(self):$/;"	m	class:Bill	file:
+__init__	cash_desk/cash_desk.py	/^	def __init__(self):$/;"	m	class:CashDesk
+__init__	cash_desk/cash_desk.py	/^	def __init__(self, amount):$/;"	m	class:Bill
+__init__	cash_desk/cash_desk.py	/^	def __init__(self, bills):$/;"	m	class:BatchBill
+__init__	fractions/fraction_class.py	/^	def __init__(self, numerator, denominator):$/;"	m	class:Fraction
+__init__	polynomial/polynomial.py	/^    def __init__(self, string):$/;"	m	class:Term
+__init__	polynomial/polynomial.py	/^    def __init__(self, terms):$/;"	m	class:Polynomial
+__int__	cash_desk/cash_desk.py	/^	def __int__(self):$/;"	m	class:Bill	file:
+__len__	cash_desk/cash_desk.py	/^	def __len__(self):$/;"	m	class:BatchBill	file:
+__lt__	fractions/fraction_class.py	/^	def __lt__(self, other):$/;"	m	class:Fraction	file:
+__repr__	cash_desk/cash_desk.py	/^	def __repr__(self):$/;"	m	class:Bill	file:
+__repr__	fractions/fraction_class.py	/^	def __repr__(self):$/;"	m	class:Fraction	file:
+__repr__	polynomial/polynomial.py	/^    def __repr__(self):$/;"	m	class:Term	file:
+__str__	cash_desk/cash_desk.py	/^	def __str__(self):$/;"	m	class:Bill	file:
+__str__	fractions/fraction_class.py	/^	def __str__(self):$/;"	m	class:Fraction	file:
+birthday_ranges	first_week/1wed-solutions.py	/^def birthday_ranges(birthdays, ranges):$/;"	f
+cat	linux_commands/cat.py	/^def cat(arguments=filename):$/;"	f
+cat2	linux_commands/cat2.py	/^def cat2(arguments=files):$/;"	f
+char_histogram	first_week/1mon-solutions.py	/^def char_histogram(string):$/;"	f
+collect_fractions	fractions/collect_fractions.py	/^def collect_fractions(fractions):$/;"	f
+common_path	common_path.py	/^def common_path(paths=sys.argv[1:]):$/;"	f
+count_consonants	first_week/1mon-solutions.py	/^def count_consonants(str):$/;"	f
+count_vowels	first_week/1mon-solutions.py	/^def count_vowels(str):$/;"	f
+denormalize_sorted_fractions	fractions/sort_fractions.py	/^def denormalize_sorted_fractions(fractions, key):$/;"	f
+derivate	polynomial/polynomial.py	/^    def derivate(self):$/;"	m	class:Term
+derivative	polynomial/polynomial.py	/^    def derivative(self):$/;"	m	class:Polynomial
+dict_sorter	my_sort/my_sort.py	/^def dict_sorter(iterable, key, ascending=True):$/;"	f
+duhs	linux_commands/duhs.py	/^def duhs(path=sys.argv[1]):$/;"	f
+fact_digits	first_week/1mon-solutions.py	/^def fact_digits(n):$/;"	f
+filename	linux_commands/cat.py	/^filename = sys.argv[1]$/;"	v
+files	linux_commands/cat2.py	/^files = [x for x in sys.argv[1:]]$/;"	v
+gas_stations	first_week/1wed-solutions.py	/^def gas_stations(distance, tank_size, stations):$/;"	f
+generate_numbers	linux_commands/generate_numbers.py	/^def generate_numbers(filename=sys.argv[1], numbers=sys.argv[2]):$/;"	f
+get_key	fractions/sort_fractions.py	/^def get_key(noms, denoms):$/;"	f
+get_largest_palindrome	first_week/1wed-solutions.py	/^def get_largest_palindrome(n):$/;"	f
+goldbach	first_week/1fri-solutions.py	/^def goldbach(n):$/;"	f
+group	first_week/1mon-solutions.py	/^def group(n):$/;"	f
+group	first_week/1wed-solutions.py	/^def group(n):$/;"	f
+increasing_or_decreasing	first_week/1wed-solutions.py	/^def increasing_or_decreasing(seq):$/;"	f
+inspect	cash_desk/cash_desk.py	/^	def inspect(self):$/;"	m	class:CashDesk
+is_credit_card_valid	first_week/1fri-solutions.py	/^def is_credit_card_valid(number):$/;"	f
+is_number_balanced	first_week/1wed-solutions.py	/^def is_number_balanced(number):$/;"	f
+list_sorter	my_sort/my_sort.py	/^def list_sorter(iterable, ascending=True):$/;"	f
+m	first_week/1mon-solutions.py	/^m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]$/;"	v
+main	cash_desk/cash_desk.py	/^def main():$/;"	f
+main	common_path.py	/^def main():$/;"	f
+main	fractions/collect_fractions.py	/^def main():$/;"	f
+main	fractions/fraction_class.py	/^def main():$/;"	f
+main	fractions/simplify_fraction.py	/^def main():$/;"	f
+main	fractions/sort_fractions.py	/^def main():$/;"	f
+main	linux_commands/cat.py	/^def main():$/;"	f
+main	linux_commands/cat2.py	/^def main():$/;"	f
+main	linux_commands/duhs.py	/^def main():$/;"	f
+main	linux_commands/generate_numbers.py	/^def main():$/;"	f
+main	linux_commands/reduce_file_path.py	/^def main():$/;"	f
+main	linux_commands/sum_numbers.py	/^def main():$/;"	f
+main	linux_commands/wc.py	/^def main():$/;"	f
+main	my_sort/my_sort.py	/^def main():$/;"	f
+main	polynomial/polynomial.py	/^def main():$/;"	f
+main	polynomial/solution.py	/^def main():$/;"	f
+main	polynomial/utils_for_polynomial.py	/^def main():$/;"	f
+matrix_bombing_plan	first_week/1fri-solutions.py	/^def matrix_bombing_plan(m):$/;"	f
+max_consecutive	first_week/1mon-solutions.py	/^def max_consecutive(items):$/;"	f
+message_to_numbers	first_week/1wed-solutions.py	/^def message_to_numbers(message):$/;"	f
+my_sort	my_sort/my_sort.py	/^def my_sort(iterable=None, ascending=True, key=''):$/;"	f
+nan_expand	first_week/1mon-solutions.py	/^def nan_expand(times):$/;"	f
+normalize_fractions	fractions/collect_fractions.py	/^def normalize_fractions(fractions):$/;"	f
+normalize_fractions	fractions/sort_fractions.py	/^def normalize_fractions(noms, denoms, key):$/;"	f
+normalize_group	first_week/1wed-solutions.py	/^def normalize_group(raw):$/;"	f
+numbers_to_message	first_week/1wed-solutions.py	/^def numbers_to_message(pressed_sequence):$/;"	f
+operators_extractor	polynomial/utils_for_polynomial.py	/^def operators_extractor(string):$/;"	f
+palindrome	first_week/1mon-solutions.py	/^def palindrome(obj):$/;"	f
+parser	polynomial/utils_for_polynomial.py	/^def parser(string):$/;"	f
+prime_factorization	first_week/1mon-solutions.py	/^def prime_factorization(n):$/;"	f
+primes_in_n	first_week/1fri-solutions.py	/^def primes_in_n(n):$/;"	f
+print_derivative	polynomial/solution.py	/^def print_derivative(string=sys.argv[1]):$/;"	f
+r_anagrams	first_week/1fri-solutions.py	/^def r_anagrams(words):$/;"	f
+reduce_file_path	linux_commands/reduce_file_path.py	/^def reduce_file_path(path=sys.argv[1]):$/;"	f
+simplify	fractions/fraction_class.py	/^	def simplify(self):$/;"	m	class:Fraction
+simplify_fraction	fractions/simplify_fraction.py	/^def simplify_fraction(fraction):$/;"	f
+sort_fractions	fractions/sort_fractions.py	/^def sort_fractions(fractions, ascending=True):$/;"	f
+sort_norm_fractions	fractions/sort_fractions.py	/^def sort_norm_fractions(fractions, key):$/;"	f
+sum_matrix	first_week/1mon-solutions.py	/^def sum_matrix(m):$/;"	f
+sum_matrix2	first_week/1mon-solutions.py	/^def sum_matrix2(m):$/;"	f
+sum_normalized_fractions	fractions/collect_fractions.py	/^def sum_normalized_fractions(frac1, frac2):$/;"	f
+sum_numbers	linux_commands/sum_numbers.py	/^def sum_numbers(filename=sys.argv[1]):$/;"	f
+sum_of_digits	first_week/1mon-solutions.py	/^def sum_of_digits(n):$/;"	f
+sum_of_digits2	first_week/1mon-solutions.py	/^def sum_of_digits2(n):$/;"	f
+sum_of_numbers	first_week/1wed-solutions.py	/^def sum_of_numbers(input_string):$/;"	f
+take_money	cash_desk/cash_desk.py	/^	def take_money(self, money):$/;"	m	class:CashDesk
+test_22_3rds	fractions/test_simplify_fraction.py	/^	def test_22_3rds(self):$/;"	m	class:TestSimplifyFraction
+test_3_9ths	fractions/test_simplify_fraction.py	/^	def test_3_9ths(self):$/;"	m	class:TestSimplifyFraction
+test_all	fractions/test_collect_fractions.py	/^	def test_all(self):$/;"	m	class:TestSumNormalizedFractions
+test_checking_total	cash_desk/test_cash_desk.py	/^	def test_checking_total(self):$/;"	m	class:TestCashDesk
+test_coefficient_and_power_assignment	polynomial/test_polynomial.py	/^	def test_coefficient_and_power_assignment(self):$/;"	m	class:TestTermsClass
+test_derivate_returns_coefficient_only_when_x_raised_to_the_power_of_1	polynomial/test_polynomial.py	/^	def test_derivate_returns_coefficient_only_when_x_raised_to_the_power_of_1(self):$/;"	m	class:TestTermsClass
+test_derivate_with_a_full_term	polynomial/test_polynomial.py	/^	def test_derivate_with_a_full_term(self):$/;"	m	class:TestTermsClass
+test_derivative_function	polynomial/test_polynomial.py	/^	def test_derivative_function(self):$/;"	m	class:TestPolymonialClass
+test_derivative_function_return_type	polynomial/test_polynomial.py	/^	def test_derivative_function_return_type(self):$/;"	m	class:TestPolymonialClass
+test_dict_sorter_descending	my_sort/test_my_sort.py	/^	def test_dict_sorter_descending(self):$/;"	m	class:TestDictSorter
+test_dict_sorter_with_valid_input	my_sort/test_my_sort.py	/^	def test_dict_sorter_with_valid_input(self):$/;"	m	class:TestDictSorter
+test_example_fractions	fractions/test_sort_fractions.py	/^	def test_example_fractions(self):$/;"	m	class:TestNormalizeFractions
+test_example_norm_fractions	fractions/test_sort_fractions.py	/^	def test_example_norm_fractions(self):$/;"	m	class:TestSortNormalizedFractions
+test_example_sorted_fractions	fractions/test_sort_fractions.py	/^	def test_example_sorted_fractions(self):$/;"	m	class:TestDenormalizeSortedFractions
+test_for_valid_input	fractions/test_fraction_class.py	/^	def test_for_valid_input(self):$/;"	m	class:TestFractionClass
+test_fraction_addition	fractions/test_fraction_class.py	/^	def test_fraction_addition(self):$/;"	m	class:TestFractionClass
+test_fraction_simplification	fractions/test_fraction_class.py	/^	def test_fraction_simplification(self):$/;"	m	class:TestFractionClass
+test_fraction_sorting	fractions/test_fraction_class.py	/^	def test_fraction_sorting(self):$/;"	m	class:TestFractionClass
+test_getitem	cash_desk/test_cash_desk.py	/^	def test_getitem(self):$/;"	m	class:TestBatchBill
+test_hash_with_bills_of_different_amounts	cash_desk/test_cash_desk.py	/^	def test_hash_with_bills_of_different_amounts(self):$/;"	m	class:TestBill
+test_hash_with_bills_of_the_same_amount	cash_desk/test_cash_desk.py	/^	def test_hash_with_bills_of_the_same_amount(self):$/;"	m	class:TestBill
+test_input_of_non_iter_type	my_sort/test_my_sort.py	/^	def test_input_of_non_iter_type(self):$/;"	m	class:TestInput
+test_int	cash_desk/test_cash_desk.py	/^	def test_int(self):$/;"	m	class:TestBill
+test_key_sorting	fractions/test_sort_fractions.py	/^	def test_key_sorting(self):$/;"	m	class:TestSortNormalizedFractions
+test_list_sorter_descending	my_sort/test_my_sort.py	/^	def test_list_sorter_descending(self):$/;"	m	class:TestListSorter
+test_list_sorter_with_duplicate_values	my_sort/test_my_sort.py	/^	def test_list_sorter_with_duplicate_values(self):$/;"	m	class:TestListSorter
+test_list_sorter_with_list_of_ints	my_sort/test_my_sort.py	/^	def test_list_sorter_with_list_of_ints(self):$/;"	m	class:TestListSorter
+test_normalize_list_of_fractions_with_some_equal_elements	fractions/test_sort_fractions.py	/^	def test_normalize_list_of_fractions_with_some_equal_elements(self):$/;"	m	class:TestNormalizeFractions
+test_operators_extractor	polynomial/test_utils_for_polynomial.py	/^	def test_operators_extractor(self):$/;"	m	class:Test
+test_parser	polynomial/test_utils_for_polynomial.py	/^	def test_parser(self):$/;"	m	class:Test
+test_quarters_and_halfs	fractions/test_collect_fractions.py	/^	def test_quarters_and_halfs(self):$/;"	m	class:TestNormalizeFractions
+test_raises_type_error_if_bills_is_not_a_list_of_bill_instances	cash_desk/test_cash_desk.py	/^	def test_raises_type_error_if_bills_is_not_a_list_of_bill_instances(self):$/;"	m	class:TestBatchBill
+test_raising_of_type_error_for_amount_type_different_than_int	cash_desk/test_cash_desk.py	/^	def test_raising_of_type_error_for_amount_type_different_than_int(self):$/;"	m	class:TestBill
+test_raising_of_value_error_for_negative_bill_amount	cash_desk/test_cash_desk.py	/^	def test_raising_of_value_error_for_negative_bill_amount(self):$/;"	m	class:TestBill
+test_random_fractions	fractions/test_sort_fractions.py	/^	def test_random_fractions(self):$/;"	m	class:TestGetKey
+test_showing_batch_lenght	cash_desk/test_cash_desk.py	/^	def test_showing_batch_lenght(self):$/;"	m	class:TestBatchBill
+test_showing_total_amount_in_batch	cash_desk/test_cash_desk.py	/^	def test_showing_total_amount_in_batch(self):$/;"	m	class:TestBatchBill
+test_str	cash_desk/test_cash_desk.py	/^	def test_str(self):$/;"	m	class:TestBill
+test_string_casting	fractions/test_fraction_class.py	/^	def test_string_casting(self):$/;"	m	class:TestFractionClass
+test_summing_fractions	fractions/test_collect_fractions.py	/^	def test_summing_fractions(self):$/;"	m	class:TestSumNormalizedFractions
+test_take_money_with_a_batch_bill	cash_desk/test_cash_desk.py	/^	def test_take_money_with_a_batch_bill(self):$/;"	m	class:TestCashDesk
+test_take_money_with_a_single_bill	cash_desk/test_cash_desk.py	/^	def test_take_money_with_a_single_bill(self):$/;"	m	class:TestCashDesk
+test_throwing_an_error_if_init_is_passed_something_other_than_string	polynomial/test_polynomial.py	/^	def test_throwing_an_error_if_init_is_passed_something_other_than_string(self):$/;"	m	class:TestTermsClass
+test_tuple_sorter_descending	my_sort/test_my_sort.py	/^	def test_tuple_sorter_descending(self):$/;"	m	class:TestTupleSorter
+test_tuple_sorter_with_tuple_of_ints	my_sort/test_my_sort.py	/^	def test_tuple_sorter_with_tuple_of_ints(self):$/;"	m	class:TestTupleSorter
+to_digits	first_week/1mon-solutions.py	/^def to_digits(n):$/;"	f
+to_digits2	first_week/1mon-solutions.py	/^def to_digits2(n):$/;"	f
+to_number	first_week/1mon-solutions.py	/^def to_number(*args):$/;"	f
+to_number2	first_week/1mon-solutions.py	/^def to_number2(digits):$/;"	f
+total	cash_desk/cash_desk.py	/^	def total(self):$/;"	m	class:BatchBill
+total	cash_desk/cash_desk.py	/^	def total(self):$/;"	m	class:CashDesk
+tuple_sorter	my_sort/my_sort.py	/^def tuple_sorter(iterable, ascending=True):$/;"	f
+wc	linux_commands/wc.py	/^def wc(command=sys.argv[1], filename=sys.argv[2]):$/;"	f

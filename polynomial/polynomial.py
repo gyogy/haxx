@@ -1,10 +1,10 @@
 class Term():
 
     def __init__(self, string):
-        
         assert type(string) is str, f'Term\'s argument must be a string, not a {type(string)}'
-        
+
         self.string = string
+
 
         if 'x' not in self.string:
             self.coefficient = int(string)
@@ -12,7 +12,7 @@ class Term():
             self.coefficient = 1
         else:
             self.coefficient = int(string[:string.find('x')])
-        
+
         if string[string.find('x')+1:] == '':
             self.power = 1
         else:
@@ -51,6 +51,6 @@ class Polynomial():
 
 def main():
     pass
-    
+
 if __name__ == '__main__':
     main()
