@@ -71,11 +71,5 @@ def next_up_in(playlist):
 			# An IndexError here means that playlist.unplayed_songs list is empty.
 			return playlist.unplayed_songs, playlist.played_songs,'Reached end of playlist.'
 
-def shuffler(playlist):
-	shuffled_songs = set(playlist.unplayed_songs)
-	return list(shuffled_songs)
-
-
-
 if __name__ == '__main__':
 	main()
