@@ -83,39 +83,7 @@ class Playlist():
         pass
 
 def main():
-    s1 = Song(title="Smooth Criminal", 
-        artist="MJ", 
-        album="Thriller", 
-        length="3:21")
-
-    s2 = Song(title="I've Commited Murder", 
-        artist="Macy Gray", 
-        album="On How Life is", 
-        length="4:36")
-
-    s3 = Song(title="Champagne and Reefer", 
-        artist="BB King", 
-        album="Greatest Hits", 
-        length="5:02")
-
-    s4 = Song(title="Billie Jean", 
-        artist="MJ", 
-        album="Off The Wall", 
-        length="2:37")
-
-    s5 = Song(title="Dust My Broom", 
-        artist="BB King", 
-        album="Greatest Hits", 
-        length="2:47")
-
-    s6 = Song(title="Thriller", 
-        artist="MJ", 
-        album="Thriller", 
-        length="7:08")
-
-    songs = [s1, s2, s3, s4, s5, s6]
-    p = Playlist("Karachernev")
-    p.add_songs(songs)
-
+    pass
+    
 if __name__ == '__main__':
     main()
