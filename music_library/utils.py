@@ -1,3 +1,4 @@
+from random import shuffle
 from datetime import datetime
 
 def length_as_time_object(length):
@@ -45,6 +46,36 @@ def total_p_time(songs):
     	minutes = minutes % 60
 
     return f'{hours}:{minutes}:{seconds}'
+
+def next_up_in(playlist):
+	
+	if playlist.shuffle:
+		shuffle(playlist.unplayed_songs)
+		
+	try:
+		playlist.played_songs.append(playlist.unplayed_songs[0])
+		playlist.unplayed_songs.remove(playlist.unplayed_songs[0])
+
+		return playlist.unplayed_songs, playlist.played_songs, playlist.played_songs[-1]
+
+	except IndexError:
+		if playlist.repeat:
+			for song in playlist.played_songs:
+				playlist.unplayed_songs.append(song)
+
+			playlist.played_songs = []
+
+			return next_up_in(playlist)
+
+		else:	
+			# An IndexError here means that playlist.unplayed_songs list is empty.
+			return playlist.unplayed_songs, playlist.played_songs,'Reached end of playlist.'
+
+def shuffler(playlist):
+	shuffled_songs = set(playlist.unplayed_songs)
+	return list(shuffled_songs)
+
+
 
 if __name__ == '__main__':
 	main()
