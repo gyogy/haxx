@@ -1,0 +1,6 @@
+Calling foo raised a ValueError: 'So big!'. Provided arguments: (38,).
+Calling foo raised a ValueError: 'So big!'. Provided arguments: (33,).
+Calling foo raised a ValueError: 'So big!'. Provided arguments: (35,).
+Calling foo raised a ValueError: 'So big!'. Provided arguments: (36,).
+Calling foo raised a ValueError: 'So big!'. Provided arguments: (39,).
+Calling foo raised a ValueError: 'So big!'. Provided arguments: (31,).
