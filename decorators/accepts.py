@@ -8,7 +8,7 @@ def accepts(*args):
             if all(type(argv[i]) is args[i] for i in range(len(argv))):
                 return func(*argv)
             else:
-                raise TypeError('Invalid argument types.')
+                raise TypeError('One or more arguments of invalid type.')
 
         return validate
 

@@ -1,0 +1,6 @@
+heavy_funkk was called and took 2.002251 seconds to finish.
+heavy_funkk was called and took 2.000167 seconds to finish.
+heavy_funkk was called and took 2.0 seconds to finish.
+heavy_funkk was called and took 3.0 seconds to finish.
+heavy_funkk was called and took 3.1 seconds to finish.
+heavy_funkk was called and took 3.102 seconds to finish.
