@@ -6,8 +6,16 @@ def cycle(iterable):
             print(i)
 
 
+def cycle2(iterable):
+
+    while True:
+
+        for i in iterable:
+            yield i
+
+
 def main():
-    endless = cycle(range(0, 10))
+    endless = cycle2(range(0, 10))
     for item in endless:
         print(item)
 

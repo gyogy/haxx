@@ -8,11 +8,17 @@ def compress(iterable, mask):
     return all_true_elements
 
 
+def compress2(iterable, mask):
+    for i in range(len(mask)):
+        if mask[i]:
+            yield iterable[i]
+
+
 def main():
     iterable = ['Ivo', 'Rado', 'Язе']
-    mask = [False, False, True]
+    mask = [True, False, True]
 
-    print(list(compress(iterable, mask)))
+    print(list(compress2(iterable, mask)))
 
 
 if __name__ == '__main__':
