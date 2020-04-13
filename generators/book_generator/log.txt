@@ -1,0 +1,6 @@
+Old way took 33.055887 seconds.
+Old way took 33.987674 seconds.
+Old way took 34.680033 seconds.
+Gen way took 18.554362 seconds.
+Gen way took 18.516329 seconds.
+Gen way took 19.470986 seconds.
