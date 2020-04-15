@@ -1,7 +1,21 @@
-import unittest
+from benchmark import MeasurePerformance
 from decimal import *
-from silence import silence_exception, SilenceException
 from precision import change_precision, ChangePrecision
+from silence import silence_exception, SilenceException
+from time import sleep
+import unittest
+
+
+# class TestBenchmarkClass(unittest.TestCase):
+
+#     def test_exit_dunder(self):
+#         with MeasurePerformance() as p:
+#             sleep(1)
+#             p.benchmark('1st stage')
+#             sleep(2)
+#             p.benchmark('2nd stage', restart=True)
+#             sleep(3)
+#             p.benchmark()
 
 
 class TestSilencerClass(unittest.TestCase):
