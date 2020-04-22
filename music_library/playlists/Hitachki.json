@@ -1,0 +1,49 @@
+{
+    "type": "Playlist",
+    "dict": {
+        "name": "Hitachki",
+        "repeat": false,
+        "shuffle": false,
+        "plist": [
+            {
+                "title": "Machine Gun Funk",
+                "artist": "Biggie Smalls",
+                "album": "Ready to Die",
+                "length_str": "4:15"
+            },
+            {
+                "title": "Bozhure, bokluk skapan!",
+                "artist": "ork. Orki",
+                "album": "Zhig-tak",
+                "length_str": "5:33"
+            },
+            {
+                "title": "Mass in B minor",
+                "artist": "Johann Sebastian Bach",
+                "album": "N/A",
+                "length_str": "1:50:03"
+            }
+        ],
+        "unplayed_songs": [
+            {
+                "title": "Machine Gun Funk",
+                "artist": "Biggie Smalls",
+                "album": "Ready to Die",
+                "length_str": "4:15"
+            },
+            {
+                "title": "Bozhure, bokluk skapan!",
+                "artist": "ork. Orki",
+                "album": "Zhig-tak",
+                "length_str": "5:33"
+            },
+            {
+                "title": "Mass in B minor",
+                "artist": "Johann Sebastian Bach",
+                "album": "N/A",
+                "length_str": "1:50:03"
+            }
+        ],
+        "played_songs": []
+    }
+}

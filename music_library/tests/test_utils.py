@@ -1,59 +1,16 @@
 import unittest
 import datetime
 from classes import Song, Playlist
-from utils import length_as_time_object, songs_duration, next_up_in
+from utils import length_str_to_time_object, next_up_in, total_p_time
+
 
 class TestLengthAsTimeObjectFunction(unittest.TestCase):
-    
-    def test_length_as_time_object_for_length_less_than_24_hours(self):
+
+    def test_length_str_to_time_object_for_length_less_than_24_hours(self):
         length = '5:13:06'
 
-        result = length_as_time_object(length)
-        expected = datetime.time(5,13,6)
-
-        self.assertEqual(result, expected)
-
-    ## Test below fails, because datetime module doesn't work with intervals greater than 24 hours.
-    # def test_length_as_time_object_for_length_greater_than_24_hours(self):
-    #     length = '25:13:06'
-
-    #     result = length_as_time_object(length)
-    #     expected = datetime.time(25,13,6)
-
-    #     self.assertEqual(result, expected)
-
-class TestSongsDurationFunction(unittest.TestCase):
-
-    def test_with_song_shorter_than_an_hour(self):
-        s = Song(title="Machine Gun Funk", 
-            artist="Biggie Smalls", 
-            album="Ready to Die", 
-            length="4:15")
-
-        result = songs_duration(s.length)
-        expected = '4:15'
-
-        self.assertEqual(result, expected)
-
-    def test_with_song_longer_than_an_hour(self):
-        s = Song(title="Mass in B minor", 
-            artist="Johann Sebastian Bach", 
-            album="N/A", 
-            length="1:50:03")
-
-        result = songs_duration(s.length)
-        expected = '1:50:03'
-
-        self.assertEqual(result, expected)
-
-    def test_songs_duration_if_seconds_is_true(self):
-        s = Song(title="Machine Gun Funk", 
-            artist="Biggie Smalls", 
-            album="Ready to Die", 
-            length="4:15")
-
-        result = songs_duration(s.length, seconds=True)
-        expected = 255
+        result = length_str_to_time_object(length)
+        expected = datetime.time(5, 13, 6)
 
         self.assertEqual(result, expected)
 
@@ -63,12 +20,12 @@ class TestTotalPTimeFunction(unittest.TestCase):
         s1 = Song(title="Machine Gun Funk", 
             artist="Biggie Smalls", 
             album="Ready to Die", 
-            length="4:15")
+            length_str="4:15")
         
         s2 = Song(title="Bozhure, bokluk skapan!", 
             artist="ork. Orki", 
             album="Zhig-tak", 
-            length="5:33")
+            length_str="5:33")
 
         songs = [s1, s2]
 
@@ -84,12 +41,12 @@ class TestTotalPTimeFunction(unittest.TestCase):
         s1 = Song(title="proba", 
             artist="test", 
             album="se_taq", 
-            length="12:45:15")
+            length_str="12:45:15")
         
         s2 = Song(title="Bozhure", 
             artist="opa", 
             album="hey", 
-            length="15:33:02")
+            length_str="15:33:02")
 
         songs = [s1, s2]
 
@@ -107,7 +64,7 @@ class TestNextUpInFunction(unittest.TestCase):
         s = Song(title="Machine Gun Funk", 
             artist="Biggie Smalls", 
             album="Ready to Die", 
-            length="4:15")
+            length_str="4:15")
 
         p = Playlist('Hitachki')
         p.add_song(s)
@@ -129,7 +86,7 @@ class TestNextUpInFunction(unittest.TestCase):
         s = Song(title="Machine Gun Funk", 
             artist="Biggie Smalls", 
             album="Ready to Die", 
-            length="4:15")
+            length_str="4:15")
         
         p = Playlist('Hitachki', repeat=True)
         p.played_songs.append(s)
@@ -151,22 +108,22 @@ class TestNextUpInFunction(unittest.TestCase):
         s1 = Song(title="Machine Gun Funk", 
             artist="Biggie Smalls", 
             album="Ready to Die", 
-            length="4:15")
+            length_str="4:15")
         
         s2 = Song(title="Bozhure, bokluk skapan!", 
             artist="ork. Orki", 
             album="Zhig-tak", 
-            length="5:33")
+            length_str="5:33")
 
         s3 = Song(title="Mass in B minor", 
             artist="Johann Sebastian Bach", 
             album="N/A", 
-            length="1:50:03")
+            length_str="1:50:03")
 
         s4 = Song(title="abc", 
             artist="def", 
             album="ghi", 
-            length="0:26")
+            length_str="0:26")
 
         songs = [s1, s2, s3, s4]
 
