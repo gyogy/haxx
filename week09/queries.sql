@@ -6,15 +6,16 @@ CREATE TABLE Languages (
   guide TEXT);
 
 INSERT INTO languages
-	VAlUES (1, "Python", "google", 0, "A folder named Python was created. Go there and fight with program.py!");
+  VAlUES (1, "Python", "google", 0, "A folder named Python was created. Go there and fight with program.py!");
 
 INSERT INTO languages
-	VAlUES (2, 	"Go", "200 OK", 0, "A folder named Go was created. Go there and try to make Google Go run.");
+  VAlUES (2, 	"Go", "200 OK", 0, "A folder named Go was created. Go there and try to make Google Go run.");
 
 ...  # Repeat query for remaining rows 
 
 ALTER TABLE languages
   ADD Rating INTEGER
+  CHECK (Rating BETWEEN 0 AND 9)
 
 UPDATE languages
 	SET Rating = 9
