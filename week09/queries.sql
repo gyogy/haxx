@@ -18,20 +18,20 @@ ALTER TABLE languages
   CHECK (Rating BETWEEN 0 AND 9)
 
 UPDATE languages
-	SET Rating = 9
-    WHERE id = 1
+  SET Rating = 9
+  WHERE id = 1
 
 UPDATE languages
-	SET Rating = 8
-    WHERE id = 2
+  SET Rating = 8
+  WHERE id = 2
 
 ...  # Repeat query for remaining rows 
 
 UPDATE languages
-	SET answered = 1
-    WHERE language = "Python" OR language = "Go"
+  SET answered = 1
+  WHERE language = "Python" OR language = "Go"
 
 SELECT *
-	FROM languages
-    WHERE answer = "200 OK" OR answer = "Lambda"
+  FROM languages
+  WHERE answer = "200 OK" OR answer = "Lambda"
 
