@@ -115,5 +115,66 @@ class TestFindAllFuncs(unittest.TestCase):
         self.assertEqual(result, expected)
 
 
+class TestDeepUpdate(unittest.TestCase):
+
+    def setUp(self):
+        self.dic = {
+            'A': {
+                'C': '[2, 5]',
+                'D': {
+                    'I': 'heyo!',
+                    'C': '6',
+                    'F': 'In [A][D]'
+                },
+                'E': 'False'
+            },
+            'B': {
+                'F': 'In [B]',
+                'C': 'None',
+                'H': 'True'
+            }
+        }
+
+    def test_deep_update_changing_nested_dict_to_string(self):
+
+        result = deep_update(self.dic, 'D', True)
+        expected = {
+            'A': {
+                'C': '[2, 5]',
+                'D': True,
+                'E': 'False'
+            },
+            'B': {
+                'F': 'In [B]',
+                'C': 'None',
+                'H': 'True'
+            }
+        }
+
+        self.assertEqual(result, expected)
+
+    def test_deep_update_changes_values_for_all_matching_keys(self):
+
+        result = deep_update(self.dic, 'C', True)
+        expected = {
+            'A': {
+                'C': True,
+                'D': {
+                    'I': 'heyo!',
+                    'C': True,
+                    'F': 'In [A][D]'
+                },
+                'E': 'False'
+            },
+            'B': {
+                'F': 'In [B]',
+                'C': True,
+                'H': 'True'
+            }
+        }
+
+        self.assertEqual(result, expected)
+
+
 if __name__ == '__main__':
     unittest.main()

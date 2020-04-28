@@ -1,23 +1,3 @@
-# import ipdb
-
-diki = {
-    'A': {
-        'C': [2, 5],
-        'D': {
-            'I': 'heyo!',
-            'J': 6,
-            'F': 'In [A][D]'
-        },
-        'E': False
-    },
-    'B': {
-        'F': 'In [B]',
-        'G': None,
-        'H': True
-    }
-}
-
-
 # def tree(dic, que=list()):
 
 #     for k, v in dic.items():
@@ -96,3 +76,16 @@ def broad_f_all(dic, key, que=list()):
     while que:
         new_dic = que.pop(0)
         yield from broad_f_all(new_dic, key, que)
+
+
+def deep_update(data, key, val):
+
+    for k, v in data.items():
+
+        if k is key:
+            data[k] = val
+
+        elif type(v) is dict:
+            data[k] = deep_update(v, key, val)
+
+    return data
