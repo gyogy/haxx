@@ -111,3 +111,35 @@ def deep_apply(func, data):
             # print(f'Couldn\'t run {func.__name__} on {k}: {v}, because of\n{T}\n')
 
     return data
+
+
+def deep_compare(obj1, obj2):
+    return obj1 == obj2
+    #  Is this it? What am I missing?
+
+
+def flatten_sch(sch):
+
+    for item in sch:
+
+        if type(item) is not list:
+            yield item
+        else:
+            yield from flatten_sch(item)
+
+
+def flatten_dic(dic):
+
+    for k, v in dic.items():
+        yield k
+
+        if type(v) is dict:
+            yield from flatten_dic(v)
+
+
+def schema_validator(schema=list(), data=dict()):
+
+    flat_sch = [s for s in flatten_sch(schema)]
+    flat_dic = [d for d in flatten_dic(data)]
+
+    return flat_sch == flat_dic

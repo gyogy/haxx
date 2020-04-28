@@ -209,5 +209,52 @@ class TestDeepApply(unittest.TestCase):
         self.assertEqual(result, expected)
 
 
+class TestSchemaValidator(unittest.TestCase):
+
+    def setUp(self):
+        self.schema = [
+            'key1',
+            'key2', [
+                'key3', [
+                    'inner_key1',
+                    'inner_key2'
+                ]
+            ]
+        ]
+
+        self.valid_dic = {
+            'key1': 'val1',
+            'key2': 'val2',
+            'key3': {
+                'inner_key1': 'val1',
+                'inner_key2': 'val2'
+            }
+        }
+
+        self.inval_dic = {
+            'key1': 'val1',
+            'key2': 'val2',
+            'key3': {
+                'inner_key1': 'val1',
+                'inner_key2': 'val2'
+            },
+            'key4': 'not expected'
+        }
+
+    def test_schema_validator_validates_valid_dic(self):
+
+        result = schema_validator(self.schema, self.valid_dic)
+        expected = True
+
+        self.assertEqual(result, expected)
+
+    def test_schema_validator_doesnt_validate_inval_dic(self):
+
+        result = schema_validator(self.schema, self.inval_dic)
+        expected = False
+
+        self.assertEqual(result, expected)
+
+
 if __name__ == '__main__':
     unittest.main()
