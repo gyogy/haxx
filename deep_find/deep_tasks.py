@@ -14,6 +14,10 @@
 #         tree(new_dic, que)
 
 
+def times_two(x):
+    return x * 2
+
+
 def deep_find(data, key):
 
     result = 'control value'
@@ -87,5 +91,23 @@ def deep_update(data, key, val):
 
         elif type(v) is dict:
             data[k] = deep_update(v, key, val)
+
+    return data
+
+
+def deep_apply(func, data):
+
+    for k, v in data.items():
+
+        try:
+
+            if type(v) is dict:
+                data[k] = deep_apply(func, v)
+            else:
+                data[k] = func(v)
+
+        except TypeError as T:
+            pass
+            # print(f'Couldn\'t run {func.__name__} on {k}: {v}, because of\n{T}\n')
 
     return data

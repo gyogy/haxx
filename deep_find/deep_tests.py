@@ -176,5 +176,38 @@ class TestDeepUpdate(unittest.TestCase):
         self.assertEqual(result, expected)
 
 
+class TestDeepApply(unittest.TestCase):
+
+    def setUp(self):
+        self.dic = {
+            'A': {
+                'list': [2, 5],
+                'C': {
+                    'str': 'a',
+                    'int': 6,
+                },
+                'bool': False
+            },
+            'B': None,
+        }
+
+    def test_deep_apply_with_simple_times_two_function(self):
+
+        result = deep_apply(times_two, self.dic)
+        expected = {
+            'A': {
+                'list': [2, 5, 2, 5],
+                'C': {
+                    'str': 'aa',
+                    'int': 12,
+                },
+                'bool': 0
+            },
+            'B': None,
+        }
+
+        self.assertEqual(result, expected)
+
+
 if __name__ == '__main__':
     unittest.main()
