@@ -70,3 +70,29 @@ def broad_find(dic, key, que=list()):
 
         if result != 'control value':
             return result
+
+
+def deep_f_all(data, key):
+
+    for k, v in data.items():
+
+        if k is key:
+            yield v
+
+        if type(v) is dict:
+            yield from deep_f_all(v, key)
+
+
+def broad_f_all(dic, key, que=list()):
+
+    for k, v in dic.items():
+
+        if k is key:
+            yield v
+
+        if type(v) is dict:
+            que.append(v)
+
+    while que:
+        new_dic = que.pop(0)
+        yield from broad_f_all(new_dic, key, que)

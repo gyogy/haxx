@@ -2,7 +2,7 @@ import unittest
 from deep_tasks import *
 
 
-class TestDeepTasks(unittest.TestCase):
+class TestFindFuncs(unittest.TestCase):
 
     def setUp(self):
         self.diki = {
@@ -61,6 +61,56 @@ class TestDeepTasks(unittest.TestCase):
 
         result = broad_find(self.diki, 'F')
         expected = 'In [B]'
+
+        self.assertEqual(result, expected)
+
+
+class TestFindAllFuncs(unittest.TestCase):
+
+    def setUp(self):
+        self.dic = {
+            'A': {
+                'C': [2, 5],
+                'D': {
+                    'I': 'heyo!',
+                    'C': 6,
+                    'F': 'In [A][D]'
+                },
+                'E': False
+            },
+            'B': {
+                'F': 'In [B]',
+                'C': None,
+                'H': True
+            }
+        }
+
+    def test_if_deep_f_all_is_depth_first(self):
+
+        result = list()
+        expected = ['In [A][D]', 'In [B]']
+
+        for hit in deep_f_all(self.dic, 'F'):
+            result.append(hit)
+
+        self.assertEqual(result, expected)
+
+    def test_deep_f_all_with_key_not_in_data(self):
+
+        result = list()
+        expected = []
+
+        for hit in deep_f_all(self.dic, 'Z'):
+            result.append(hit)
+
+        self.assertEqual(result, expected)
+
+    def test_if_broad_f_all_is_breadth_first(self):
+        result = list()
+        expected = [[2, 5], None, 6]
+
+        for hit in broad_f_all(self.dic, 'C'):
+            result.append(hit)
 
         self.assertEqual(result, expected)
 
