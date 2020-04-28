@@ -30,11 +30,11 @@ diki = {
 #             print(f'{k}: [{v}]')
 
 #     while que:
-#         nd = que.pop(0)
-#         tree(nd, que)
+#         new_dic = que.pop(0)
+#         tree(new_dic, que)
 
 
-def df_dfs(data, key):
+def deep_find(data, key):
 
     result = 'control value'
 
@@ -46,12 +46,12 @@ def df_dfs(data, key):
             result = v
 
         elif type(v) is dict:
-            result = df_dfs(v, key)
+            result = deep_find(v, key)
 
     return result
 
 
-def df_bfs(dic, key, que=list()):
+def broad_find(dic, key, que=list()):
 
     result = 'control value'
 
@@ -66,7 +66,7 @@ def df_bfs(dic, key, que=list()):
 
     while que:
         new_dic = que.pop(0)
-        result = df_bfs(new_dic, key, que)
+        result = broad_find(new_dic, key, que)
 
         if result != 'control value':
             return result

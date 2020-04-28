@@ -22,44 +22,44 @@ class TestDeepTasks(unittest.TestCase):
             }
         }
 
-    def test_df_dfs_with_target_in_top_level(self):
+    def test_deep_find_with_target_in_top_level(self):
 
-        result = df_dfs(self.diki, 'B')
+        result = deep_find(self.diki, 'B')
         expected = {'F': 'In [B]', 'G': None, 'H': True}
 
         self.assertEqual(result, expected)
 
-    def test_df_dfs_with_target_inside_first_branch(self):
+    def test_deep_find_with_target_inside_first_branch(self):
 
-        result = df_dfs(self.diki, 'E')
+        result = deep_find(self.diki, 'E')
         expected = False
 
         self.assertEqual(result, expected)
 
-    def test_df_dfs_with_target_outside_first_branch(self):
+    def test_deep_find_with_target_outside_first_branch(self):
 
-        result = df_dfs(self.diki, 'J')
+        result = deep_find(self.diki, 'J')
         expected = 6
 
         self.assertEqual(result, expected)
 
-    def test_df_dfs_with_duplicate_key(self):
+    def test_deep_find_with_duplicate_key(self):
 
-        result = df_dfs(self.diki, 'F')
+        result = deep_find(self.diki, 'F')
         expected = 'In [A][D]'
 
         self.assertEqual(result, expected)
 
-    def test_df_bfs_with_target_in_top_level(self):
+    def test_broad_find_with_target_in_top_level(self):
 
-        result = df_bfs(self.diki, 'B')
+        result = broad_find(self.diki, 'B')
         expected = {'F': 'In [B]', 'G': None, 'H': True}
 
         self.assertEqual(result, expected)
 
-    def test_df_bfs_finds_correct_duplicate_key(self):
+    def test_broad_find_finds_correct_duplicate_key(self):
 
-        result = df_bfs(self.diki, 'F')
+        result = broad_find(self.diki, 'F')
         expected = 'In [B]'
 
         self.assertEqual(result, expected)
