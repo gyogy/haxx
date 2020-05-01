@@ -1,8 +1,9 @@
 from sql_funcs import *
+
 create_db()
 fill_empty_db()
 
-supported_commands = {
+supported = {
     'add': add,
     'list': list_contacts,
     'delete': delete,
@@ -23,13 +24,13 @@ def main():
 
         command = input('Enter command: ')
 
-        if command not in supported_commands:
+        if command not in supported:
             print(f'"{command}" is not a supported command.')
 
         elif command == 'quit':
             break
         else:
-            supported_commands[command]()
+            supported[command]()
 
     print('''
 Closing catalogue. Bye!
